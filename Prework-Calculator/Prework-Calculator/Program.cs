@@ -42,7 +42,7 @@ namespace Prework_Calculator
             }
             else if (result == "4")
             {
-                //Divide
+                Divide();
                 return true;
             }
             else if (result == "5")
@@ -51,7 +51,7 @@ namespace Prework_Calculator
             }
             else
             {
-                //OtherKeyPressed();
+                OtherKeyPressed();
                 return true;
             }
         }
@@ -69,7 +69,7 @@ namespace Prework_Calculator
 
             int addResult = x + y;
             Console.WriteLine("\n");
-            Console.WriteLine(addResult);
+            Console.WriteLine($"{x} + {y} = {addResult}");
             Console.ReadLine();
         }
 
@@ -86,7 +86,7 @@ namespace Prework_Calculator
 
             int subtractResult = x - y;
             Console.WriteLine("\n");
-            Console.WriteLine(subtractResult);
+            Console.WriteLine($"{x} - {y} = {subtractResult}");
             Console.ReadLine();
         }
 
@@ -103,7 +103,7 @@ namespace Prework_Calculator
 
             int multiplyResult = x * y;
             Console.WriteLine("\n");
-            Console.WriteLine(multiplyResult);
+            Console.WriteLine($"{x} * {y} = {multiplyResult}");
             Console.ReadLine();
         }
 
@@ -118,6 +118,18 @@ namespace Prework_Calculator
             Console.Write("Enter your second number:  ");
             y = float.Parse(Console.ReadLine());
 
+            float divideResult = x / y;
+            Console.WriteLine("\n");
+            Console.WriteLine($"{x} / {y} = {divideResult}");
+            Console.ReadLine();
+        }
+
+        private static void OtherKeyPressed()
+        {
+            Console.Clear();
+            Console.WriteLine("Oh no.  You didn't type in a valid number.");
+            Console.WriteLine("Please type in a valid option in the Main Menu.");
+            Console.ReadLine();
         }
     }
 }
