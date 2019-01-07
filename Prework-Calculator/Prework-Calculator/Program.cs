@@ -27,7 +27,7 @@ namespace Prework_Calculator
             string result = Console.ReadLine();
             if (result == "1")
             {
-                //addition
+                Addition();
                 return true;
             }
             else if (result == "2")
@@ -51,9 +51,26 @@ namespace Prework_Calculator
             }
             else
             {
-                OtherKeyPressed();
+                //OtherKeyPressed();
                 return true;
             }
+        }
+
+        private static void Addition()
+        {
+            Console.Clear();
+            Console.WriteLine("Addition of two integers.");
+            int x;
+            int y;
+            Console.Write("Enter your first number:   ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write("Enter your second number:  ");
+            y = int.Parse(Console.ReadLine());
+
+            int addResults = x + y;
+            Console.WriteLine("\n");
+            Console.WriteLine(addResults);
+            Console.ReadLine();
         }
     }
 }
