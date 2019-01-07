@@ -32,7 +32,7 @@ namespace Prework_Calculator
             }
             else if (result == "2")
             {
-                //subtration
+                Subtraction();
                 return true;
             }
             else if (result == "3")
@@ -67,10 +67,33 @@ namespace Prework_Calculator
             Console.Write("Enter your second number:  ");
             y = int.Parse(Console.ReadLine());
 
-            int addResults = x + y;
+            int addResult = x + y;
             Console.WriteLine("\n");
-            Console.WriteLine(addResults);
+            Console.WriteLine(addResult);
             Console.ReadLine();
+        }
+
+        private static void Subtraction()
+        {
+            Console.Clear();
+            Console.WriteLine("Subtraction of two integers.");
+            int x;
+            int y;
+            Console.Write("Enter your first number:       ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write("Enter your second number:  ");
+            y = int.Parse(Console.ReadLine());
+
+            int subtractResult = x - y;
+            Console.WriteLine("\n");
+            Console.WriteLine(subtractResult);
+            Console.ReadLine();
+        }
+
+        private static void Multiplication()
+        {
+            Console.Clear();
+            Console.WriteLine("")
         }
     }
 }
