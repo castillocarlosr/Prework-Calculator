@@ -37,7 +37,7 @@ namespace Prework_Calculator
             }
             else if (result == "3")
             {
-                //multiply
+                Multiply();
                 return true;
             }
             else if (result == "4")
@@ -79,7 +79,7 @@ namespace Prework_Calculator
             Console.WriteLine("Subtraction of two integers.");
             int x;
             int y;
-            Console.Write("Enter your first number:       ");
+            Console.Write("Enter your first number:   ");
             x = int.Parse(Console.ReadLine());
             Console.Write("Enter your second number:  ");
             y = int.Parse(Console.ReadLine());
@@ -90,10 +90,34 @@ namespace Prework_Calculator
             Console.ReadLine();
         }
 
-        private static void Multiplication()
+        private static void Multiply()
         {
             Console.Clear();
-            Console.WriteLine("")
+            Console.WriteLine("Multiplication of two integers.");
+            int x;
+            int y;
+            Console.Write("Enter your first number:   ");
+            x = int.Parse(Console.ReadLine());
+            Console.Write("Enter your second number:  ");
+            y = int.Parse(Console.ReadLine());
+
+            int multiplyResult = x * y;
+            Console.WriteLine("\n");
+            Console.WriteLine(multiplyResult);
+            Console.ReadLine();
+        }
+
+        private static void Divide()
+        {
+            Console.Clear();
+            Console.WriteLine("Division of two integers.");
+            float x;
+            float y;
+            Console.Write("Enter your first number:   ");
+            x = float.Parse(Console.ReadLine());
+            Console.Write("Enter your second number:  ");
+            y = float.Parse(Console.ReadLine());
+
         }
     }
 }
